@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "relief-radar"
+version = "0.1.0"
+description = "Relief Radar: point-in-time prediction of CFPB complaint relief outcomes, an audit of the opt-in narrative layer, and a CFPB-to-EDGAR company alignment."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Joseph Kerlin" }]
+dependencies = [
+    "numpy==2.5.4",
+    "pandas==3.1.1",
+    "pyarrow==26.0.1",
+    "scikit-learn==1.9.1",
+    "scipy==1.18.1",
+    "matplotlib==3.11.2",
+    "joblib==1.6.0",
+]
+
+[project.optional-dependencies]
+nlp = [
+    "fastembed",
+]
+dev = [
+    "pytest==9.2.0",
+    "ruff==0.17.4",
+]
+notebooks = [
+    "nbformat==5.11.1",
+    "nbclient==0.11.0",
+    "nbconvert==7.17.2",
+    "ipykernel==7.4.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

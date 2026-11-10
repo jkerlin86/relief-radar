@@ -1,0 +1,6 @@
+{
+ "cfpb_companies": 7639,
+ "cfpb_primary_complaints": 18367254,
+ "status": "blocked",
+ "reason": "SEC company_tickers.json could not be downloaded from this environment (SEC returned an access/rate page, HTTP 403, to the declared User-Agent). No third-party mirror was used. The matcher is implemented and unit-tested on fixtures; run scripts/download_data.py from a network where EDGAR fair access succeeds, then re-run this script."
+}

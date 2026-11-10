@@ -1,0 +1,141 @@
+{
+ "complaints": {
+  "date_min_parsed": "2011-12-01",
+  "date_max_parsed": "2026-11-10",
+  "rows": 19045222,
+  "primary_population_rows": 18367254,
+  "positives_monetary_relief": 225085,
+  "negatives_other_closures": 18142169,
+  "unique_companies_raw": 8212,
+  "rows_by_year": {
+   "2011": 2536,
+   "2012": 72368,
+   "2013": 108214,
+   "2014": 152908,
+   "2015": 168272,
+   "2016": 191292,
+   "2017": 242745,
+   "2018": 257130,
+   "2019": 277239,
+   "2020": 444212,
+   "2021": 495940,
+   "2022": 800245,
+   "2023": 1292043,
+   "2024": 2734252,
+   "2025": 5442927,
+   "2026": 6362899
+  }
+ },
+ "narratives": {
+  "narrative_rows_before_dedup": 3851415,
+  "narrative_rows": 3851415,
+  "duplicate_ids_dropped": 0,
+  "per_file": {
+   "CCDB_Export_10_March_2025_through_April_2025.zip": {
+    "rows_in_file": 803073,
+    "narratives_kept": 210147,
+    "duplicates_dropped": 0
+   },
+   "CCDB_Export_11_May_2025_through_June_2025.zip": {
+    "rows_in_file": 827343,
+    "narratives_kept": 219632,
+    "duplicates_dropped": 0
+   },
+   "CCDB_Export_12_July_2025_through_August_2025.zip": {
+    "rows_in_file": 968761,
+    "narratives_kept": 234404,
+    "duplicates_dropped": 0
+   },
+   "CCDB_Export_13_September_2025_through_October_2025.zip": {
+    "rows_in_file": 1023636,
+    "narratives_kept": 157821,
+    "duplicates_dropped": 0
+   },
+   "CCDB_Export_14_November_2025_through_December_2025.zip": {
+    "rows_in_file": 1009132,
+    "narratives_kept": 134641,
+    "duplicates_dropped": 0
+   },
+   "CCDB_Export_15_January_2026_through_February_2026.zip": {
+    "rows_in_file": 1038383,
+    "narratives_kept": 34351,
+    "duplicates_dropped": 0
+   },
+   "CCDB_Export_16_March_2026.zip": {
+    "rows_in_file": 614945,
+    "narratives_kept": 21640,
+    "duplicates_dropped": 0
+   },
+   "CCDB_Export_17_April_2026.zip": {
+    "rows_in_file": 618293,
+    "narratives_kept": 21052,
+    "duplicates_dropped": 0
+   },
+   "CCDB_Export_18_May_2026.zip": {
+    "rows_in_file": 619940,
+    "narratives_kept": 17528,
+    "duplicates_dropped": 0
+   },
+   "CCDB_Export_19_June_2026.zip": {
+    "rows_in_file": 620794,
+    "narratives_kept": 16820,
+    "duplicates_dropped": 0
+   },
+   "CCDB_Export_1_December_2011_through_April_2018.zip": {
+    "rows_in_file": 1031863,
+    "narratives_kept": 291574,
+    "duplicates_dropped": 0
+   },
+   "CCDB_Export_20_July_2026.zip": {
+    "rows_in_file": 672036,
+    "narratives_kept": 10002,
+    "duplicates_dropped": 0
+   },
+   "CCDB_Export_21_August_2026.zip": {
+    "rows_in_file": 667140,
+    "narratives_kept": 1,
+    "duplicates_dropped": 0
+   },
+   "CCDB_Export_2_May_2018_through_April_2021.zip": {
+    "rows_in_file": 1041632,
+    "narratives_kept": 439860,
+    "duplicates_dropped": 0
+   },
+   "CCDB_Export_3_May_2021_through_October_2022.zip": {
+    "rows_in_file": 977426,
+    "narratives_kept": 408046,
+    "duplicates_dropped": 0
+   },
+   "CCDB_Export_4_November_2022_through_August_2023.zip": {
+    "rows_in_file": 987495,
+    "narratives_kept": 388495,
+    "duplicates_dropped": 0
+   },
+   "CCDB_Export_5_September_2023_through_March_2024.zip": {
+    "rows_in_file": 945532,
+    "narratives_kept": 318804,
+    "duplicates_dropped": 0
+   },
+   "CCDB_Export_6_April_2024_through_July_2024.zip": {
+    "rows_in_file": 839903,
+    "narratives_kept": 276332,
+    "duplicates_dropped": 0
+   },
+   "CCDB_Export_7_August_2024_through_October_2024.zip": {
+    "rows_in_file": 824514,
+    "narratives_kept": 229944,
+    "duplicates_dropped": 0
+   },
+   "CCDB_Export_8_November_2024_through_December_2024.zip": {
+    "rows_in_file": 591058,
+    "narratives_kept": 154916,
+    "duplicates_dropped": 0
+   },
+   "CCDB_Export_9_January_2025_through_February_2025.zip": {
+    "rows_in_file": 811019,
+    "narratives_kept": 265405,
+    "duplicates_dropped": 0
+   }
+  }
+ }
+}

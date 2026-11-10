@@ -1,0 +1,1124 @@
+{
+ "project": "D1 \u2014 Relief Radar: CFPB Complaint Outcomes x SEC Disclosure",
+ "snapshot_gate": {
+  "columns": [
+   "Date received",
+   "Product",
+   "Sub-product",
+   "Issue",
+   "Sub-issue",
+   "Company public response",
+   "Company",
+   "State",
+   "ZIP code",
+   "Tags",
+   "Submitted via",
+   "Date sent to company",
+   "Company response to consumer",
+   "Timely response?",
+   "Complaint ID"
+  ],
+  "has_narrative_column": false,
+  "rows": 19045222,
+  "date_received_min": "2011-12-01",
+  "date_received_max": "2026-11-10",
+  "response_distribution": {
+   "Closed with explanation": 11773314,
+   "Closed with non-monetary relief": 6350988,
+   "In progress": 618977,
+   "Closed with monetary relief": 225085,
+   "Untimely response": 36055,
+   "Closed without relief": 17867,
+   "Closed": 17611,
+   "Closed with relief": 5304,
+   "(missing)": 21
+  },
+  "bulk_zip_sha256": "db66181722a6a49b6010b73fe32425bca393d718c8f45af40d84cadb2f4c1d9f"
+ },
+ "dataset_build": {
+  "complaints": {
+   "date_min_parsed": "2011-12-01",
+   "date_max_parsed": "2026-11-10",
+   "rows": 19045222,
+   "primary_population_rows": 18367254,
+   "positives_monetary_relief": 225085,
+   "negatives_other_closures": 18142169,
+   "unique_companies_raw": 8212,
+   "rows_by_year": {
+    "2011": 2536,
+    "2012": 72368,
+    "2013": 108214,
+    "2014": 152908,
+    "2015": 168272,
+    "2016": 191292,
+    "2017": 242745,
+    "2018": 257130,
+    "2019": 277239,
+    "2020": 444212,
+    "2021": 495940,
+    "2022": 800245,
+    "2023": 1292043,
+    "2024": 2734252,
+    "2025": 5442927,
+    "2026": 6362899
+   }
+  },
+  "narratives": {
+   "narrative_rows_before_dedup": 3851415,
+   "narrative_rows": 3851415,
+   "duplicate_ids_dropped": 0,
+   "per_file": {
+    "CCDB_Export_10_March_2025_through_April_2025.zip": {
+     "rows_in_file": 803073,
+     "narratives_kept": 210147,
+     "duplicates_dropped": 0
+    },
+    "CCDB_Export_11_May_2025_through_June_2025.zip": {
+     "rows_in_file": 827343,
+     "narratives_kept": 219632,
+     "duplicates_dropped": 0
+    },
+    "CCDB_Export_12_July_2025_through_August_2025.zip": {
+     "rows_in_file": 968761,
+     "narratives_kept": 234404,
+     "duplicates_dropped": 0
+    },
+    "CCDB_Export_13_September_2025_through_October_2025.zip": {
+     "rows_in_file": 1023636,
+     "narratives_kept": 157821,
+     "duplicates_dropped": 0
+    },
+    "CCDB_Export_14_November_2025_through_December_2025.zip": {
+     "rows_in_file": 1009132,
+     "narratives_kept": 134641,
+     "duplicates_dropped": 0
+    },
+    "CCDB_Export_15_January_2026_through_February_2026.zip": {
+     "rows_in_file": 1038383,
+     "narratives_kept": 34351,
+     "duplicates_dropped": 0
+    },
+    "CCDB_Export_16_March_2026.zip": {
+     "rows_in_file": 614945,
+     "narratives_kept": 21640,
+     "duplicates_dropped": 0
+    },
+    "CCDB_Export_17_April_2026.zip": {
+     "rows_in_file": 618293,
+     "narratives_kept": 21052,
+     "duplicates_dropped": 0
+    },
+    "CCDB_Export_18_May_2026.zip": {
+     "rows_in_file": 619940,
+     "narratives_kept": 17528,
+     "duplicates_dropped": 0
+    },
+    "CCDB_Export_19_June_2026.zip": {
+     "rows_in_file": 620794,
+     "narratives_kept": 16820,
+     "duplicates_dropped": 0
+    },
+    "CCDB_Export_1_December_2011_through_April_2018.zip": {
+     "rows_in_file": 1031863,
+     "narratives_kept": 291574,
+     "duplicates_dropped": 0
+    },
+    "CCDB_Export_20_July_2026.zip": {
+     "rows_in_file": 672036,
+     "narratives_kept": 10002,
+     "duplicates_dropped": 0
+    },
+    "CCDB_Export_21_August_2026.zip": {
+     "rows_in_file": 667140,
+     "narratives_kept": 1,
+     "duplicates_dropped": 0
+    },
+    "CCDB_Export_2_May_2018_through_April_2021.zip": {
+     "rows_in_file": 1041632,
+     "narratives_kept": 439860,
+     "duplicates_dropped": 0
+    },
+    "CCDB_Export_3_May_2021_through_October_2022.zip": {
+     "rows_in_file": 977426,
+     "narratives_kept": 408046,
+     "duplicates_dropped": 0
+    },
+    "CCDB_Export_4_November_2022_through_August_2023.zip": {
+     "rows_in_file": 987495,
+     "narratives_kept": 388495,
+     "duplicates_dropped": 0
+    },
+    "CCDB_Export_5_September_2023_through_March_2024.zip": {
+     "rows_in_file": 945532,
+     "narratives_kept": 318804,
+     "duplicates_dropped": 0
+    },
+    "CCDB_Export_6_April_2024_through_July_2024.zip": {
+     "rows_in_file": 839903,
+     "narratives_kept": 276332,
+     "duplicates_dropped": 0
+    },
+    "CCDB_Export_7_August_2024_through_October_2024.zip": {
+     "rows_in_file": 824514,
+     "narratives_kept": 229944,
+     "duplicates_dropped": 0
+    },
+    "CCDB_Export_8_November_2024_through_December_2024.zip": {
+     "rows_in_file": 591058,
+     "narratives_kept": 154916,
+     "duplicates_dropped": 0
+    },
+    "CCDB_Export_9_January_2025_through_February_2025.zip": {
+     "rows_in_file": 811019,
+     "narratives_kept": 265405,
+     "duplicates_dropped": 0
+    }
+   }
+  }
+ },
+ "structured_modelling": {
+  "protocol": {
+   "train": "date_received < 2024-01-01",
+   "buffer_year": 2024,
+   "test": "date_received >= 2025-01-01",
+   "train_sample_n": 1000000,
+   "test_sample_n": 500000,
+   "seed": 42
+  },
+  "population": {
+   "primary_rows": 18367254,
+   "primary_positives": 225085,
+   "primary_base_rate": 0.012254689786508097,
+   "train_era_rows": 4473982,
+   "test_era_rows": 11160517,
+   "train_era_base_rate": 0.03277818283578253,
+   "test_era_base_rate": 0.004900400223394669
+  },
+  "era_base_rates_full_population": {
+   "2023": {
+    "n": 1291333,
+    "relief_rate": 0.015762781559830037
+   },
+   "2024": {
+    "n": 2732755,
+    "relief_rate": 0.008689033594303185
+   },
+   "2025": {
+    "n": 5433267,
+    "relief_rate": 0.004808524962973474
+   },
+   "2026": {
+    "n": 5727250,
+    "relief_rate": 0.004987559474442359
+   },
+   "2017": {
+    "n": 240309,
+    "relief_rate": 0.04889121922191845
+   },
+   "2022": {
+    "n": 799673,
+    "relief_rate": 0.02107361383965696
+   },
+   "2014": {
+    "n": 149069,
+    "relief_rate": 0.06268909028704828
+   },
+   "2019": {
+    "n": 276201,
+    "relief_rate": 0.04123808385921847
+   },
+   "2020": {
+    "n": 443363,
+    "relief_rate": 0.029161206505730067
+   },
+   "2016": {
+    "n": 186803,
+    "relief_rate": 0.0640889064950777
+   },
+   "2021": {
+    "n": 495081,
+    "relief_rate": 0.02862561883812952
+   },
+   "2012": {
+    "n": 65819,
+    "relief_rate": 0.09991036023032863
+   },
+   "2013": {
+    "n": 105110,
+    "relief_rate": 0.08485396251546
+   },
+   "2011": {
+    "n": 1854,
+    "relief_rate": 0.0010787486515641855
+   },
+   "2015": {
+    "n": 163419,
+    "relief_rate": 0.0640929145325819
+   },
+   "2018": {
+    "n": 255948,
+    "relief_rate": 0.046548517667651244
+   }
+  },
+  "category_caps": {
+   "sub_product": 60,
+   "issue": 60,
+   "sub_issue": 60
+  },
+  "samples": {
+   "train_n": 1000000,
+   "train_base_rate": 0.032837,
+   "test_n": 500000,
+   "test_base_rate": 0.005092
+  },
+  "models": {
+   "logistic_regression": {
+    "test": {
+     "n": 500000,
+     "positives": 2546,
+     "base_rate": 0.005092,
+     "brier": 0.004031696483039547,
+     "log_loss": 0.015220642047699665,
+     "roc_auc": 0.9850612231860122,
+     "pr_auc": 0.2965832432155792
+    },
+    "calibration_max_abs_gap": 0.011864556495892062
+   },
+   "hist_gradient_boosting": {
+    "test": {
+     "n": 500000,
+     "positives": 2546,
+     "base_rate": 0.005092,
+     "brier": 0.004093053231894191,
+     "log_loss": 0.014301021420451736,
+     "roc_auc": 0.989592983118113,
+     "pr_auc": 0.29355925521783144
+    },
+    "calibration_max_abs_gap": 0.014622222680338984,
+    "subgroups_product": [
+     {
+      "product": "Credit reporting or other personal consumer reports",
+      "n": 448755,
+      "positives": 79,
+      "base_rate": 0.00017604260676761261,
+      "brier": 0.00017886802808347025,
+      "log_loss": 0.0010936962518065215,
+      "roc_auc": 0.9793244844945201,
+      "pr_auc": 0.016473829614411677
+     },
+     {
+      "product": "Debt collection",
+      "n": 23879,
+      "positives": 37,
+      "base_rate": 0.001549478621382805,
+      "brier": 0.0016681790442995353,
+      "log_loss": 0.01022929199137546,
+      "roc_auc": 0.9185958460767621,
+      "pr_auc": 0.019894042601004108
+     },
+     {
+      "product": "Credit card",
+      "n": 7436,
+      "positives": 1085,
+      "base_rate": 0.14591178052716514,
+      "brier": 0.10803506654111233,
+      "log_loss": 0.339039853518459,
+      "roc_auc": 0.8004063368227509,
+      "pr_auc": 0.35781215931415133
+     },
+     {
+      "product": "Checking or savings account",
+      "n": 7098,
+      "positives": 928,
+      "base_rate": 0.1307410538179769,
+      "brier": 0.10634801412983416,
+      "log_loss": 0.3543042956941151,
+      "roc_auc": 0.7121114052981614,
+      "pr_auc": 0.2813150190286597
+     },
+     {
+      "product": "Money transfer, virtual currency, or money service",
+      "n": 5241,
+      "positives": 215,
+      "base_rate": 0.041022705590536154,
+      "brier": 0.03463789971523086,
+      "log_loss": 0.12023010507232287,
+      "roc_auc": 0.9033324387603068,
+      "pr_auc": 0.19087393034510527
+     },
+     {
+      "product": "Mortgage",
+      "n": 2329,
+      "positives": 46,
+      "base_rate": 0.0197509660798626,
+      "brier": 0.019301506962995273,
+      "log_loss": 0.08757706373986825,
+      "roc_auc": 0.7874840503532727,
+      "pr_auc": 0.050436065799765874
+     },
+     {
+      "product": "Vehicle loan or lease",
+      "n": 1807,
+      "positives": 47,
+      "base_rate": 0.026009961261759824,
+      "brier": 0.02463511676205546,
+      "log_loss": 0.11446007407329674,
+      "roc_auc": 0.7545212765957446,
+      "pr_auc": 0.09800016400087981
+     },
+     {
+      "product": "Student loan",
+      "n": 1364,
+      "positives": 6,
+      "base_rate": 0.004398826979472141,
+      "brier": 0.004355964805289162,
+      "log_loss": 0.023956425903833033,
+      "roc_auc": 0.8686794305351007,
+      "pr_auc": 0.035587909915888144
+     },
+     {
+      "product": "Payday loan, title loan, personal loan, or advance loan",
+      "n": 1255,
+      "positives": 28,
+      "base_rate": 0.022310756972111555,
+      "brier": 0.019546693450390566,
+      "log_loss": 0.0821097055344971,
+      "roc_auc": 0.8765572243567354,
+      "pr_auc": 0.23173206263212476
+     },
+     {
+      "product": "Prepaid card",
+      "n": 503,
+      "positives": 67,
+      "base_rate": 0.13320079522862824,
+      "brier": 0.11883408257679037,
+      "log_loss": 0.3497140358583389,
+      "roc_auc": 0.8420854443379433,
+      "pr_auc": 0.3628934096102168
+     },
+     {
+      "product": "Debt or credit management",
+      "n": 333,
+      "positives": 8,
+      "base_rate": 0.024024024024024024,
+      "brier": 0.020915944709429063,
+      "log_loss": 0.08089736421704656,
+      "roc_auc": 0.9461538461538462,
+      "pr_auc": 0.21233858028827543
+     }
+    ],
+    "subgroups_year": [
+     {
+      "year": 2026,
+      "n": 256210,
+      "positives": 1307,
+      "base_rate": 0.005101284102884352,
+      "brier": 0.004108116085659018,
+      "log_loss": 0.014076395003684575,
+      "roc_auc": 0.9905633575825823,
+      "pr_auc": 0.28583969867544895
+     },
+     {
+      "year": 2025,
+      "n": 243790,
+      "positives": 1239,
+      "base_rate": 0.005082242913983346,
+      "brier": 0.004077222993725742,
+      "log_loss": 0.014537091539160111,
+      "roc_auc": 0.988553523514649,
+      "pr_auc": 0.30484869722892066
+     }
+    ],
+    "subgroups_submitted_via": [
+     {
+      "submitted_via": "Web",
+      "n": 497212,
+      "positives": 2307,
+      "base_rate": 0.004639871925858587,
+      "brier": 0.003754900385637055,
+      "log_loss": 0.01321224326616344,
+      "roc_auc": 0.990053914670072,
+      "pr_auc": 0.28880450561043
+     },
+     {
+      "submitted_via": "Phone",
+      "n": 1298,
+      "positives": 102,
+      "base_rate": 0.07858243451463791,
+      "brier": 0.05899225352999697,
+      "log_loss": 0.19037726306354896,
+      "roc_auc": 0.8902550986949964,
+      "pr_auc": 0.3523371018108474
+     },
+     {
+      "submitted_via": "Referral",
+      "n": 984,
+      "positives": 114,
+      "base_rate": 0.11585365853658537,
+      "brier": 0.08935500073873173,
+      "log_loss": 0.2905520636902542,
+      "roc_auc": 0.8075670498084291,
+      "pr_auc": 0.3273541273092617
+     },
+     {
+      "submitted_via": "Postal mail",
+      "n": 506,
+      "positives": 23,
+      "base_rate": 0.045454545454545456,
+      "brier": 0.029738773902916966,
+      "log_loss": 0.09528042142789649,
+      "roc_auc": 0.963543073183905,
+      "pr_auc": 0.5350850797394885
+     }
+    ]
+   },
+   "logistic_regression_balanced_sensitivity": {
+    "test": {
+     "n": 500000,
+     "positives": 2546,
+     "base_rate": 0.005092,
+     "brier": 0.01872247829754197,
+     "log_loss": 0.0667309728534662,
+     "roc_auc": 0.9887279001896827,
+     "pr_auc": 0.2990934850078323
+    },
+    "calibration_max_abs_gap": 0.5080402313382912
+   }
+  }
+ },
+ "selection_audit": {
+  "window": {
+   "start": "2015-01-01",
+   "end": "2026-08-14"
+  },
+  "population": {
+   "primary_rows_in_window": 16782339,
+   "narrative_rows_in_window": 3836347,
+   "narrative_share": 0.2285942978508538,
+   "relief_rate_narrative": 0.025826391616816727,
+   "relief_rate_no_narrative": 0.007290596193787235
+  },
+  "tables": {
+   "year": [
+    {
+     "year": 2025,
+     "n": 5433267,
+     "narrative_n": 1218083,
+     "relief_with": 15154,
+     "relief_without": 10972,
+     "narrative_share": 0.22418979225574595,
+     "relief_rate_all": 0.004808524962973474,
+     "relief_rate_narrative": 0.012440859941399724,
+     "relief_rate_no_narrative": 0.002602970593928996,
+     "relief_rate_diff": 0.009837889347470728
+    },
+    {
+     "year": 2026,
+     "n": 4464187,
+     "narrative_n": 118953,
+     "relief_with": 8026,
+     "relief_without": 13759,
+     "narrative_share": 0.026646061197705205,
+     "relief_rate_all": 0.004879947905408084,
+     "relief_rate_narrative": 0.06747202676687432,
+     "relief_rate_no_narrative": 0.003166457778798564,
+     "relief_rate_diff": 0.06430556898807575
+    },
+    {
+     "year": 2024,
+     "n": 2732755,
+     "narrative_n": 813643,
+     "relief_with": 13912,
+     "relief_without": 9833,
+     "narrative_share": 0.297737265140856,
+     "relief_rate_all": 0.008689033594303185,
+     "relief_rate_narrative": 0.017098408024158015,
+     "relief_rate_no_narrative": 0.005123723888965313,
+     "relief_rate_diff": 0.011974684135192702
+    },
+    {
+     "year": 2023,
+     "n": 1291333,
+     "narrative_n": 487008,
+     "relief_with": 12228,
+     "relief_without": 8127,
+     "narrative_share": 0.3771358743252128,
+     "relief_rate_all": 0.015762781559830037,
+     "relief_rate_narrative": 0.025108417110191208,
+     "relief_rate_no_narrative": 0.010104124576508252,
+     "relief_rate_diff": 0.015004292533682956
+    },
+    {
+     "year": 2022,
+     "n": 799673,
+     "narrative_n": 336952,
+     "relief_with": 9235,
+     "relief_without": 7617,
+     "narrative_share": 0.42136223181225324,
+     "relief_rate_all": 0.02107361383965696,
+     "relief_rate_narrative": 0.02740746456468577,
+     "relief_rate_no_narrative": 0.01646132334603357,
+     "relief_rate_diff": 0.0109461412186522
+    },
+    {
+     "year": 2021,
+     "n": 495081,
+     "narrative_n": 203094,
+     "relief_with": 7474,
+     "relief_without": 6698,
+     "narrative_share": 0.410223781563017,
+     "relief_rate_all": 0.02862561883812952,
+     "relief_rate_narrative": 0.036800693275035205,
+     "relief_rate_no_narrative": 0.022939377438036625,
+     "relief_rate_diff": 0.01386131583699858
+    },
+    {
+     "year": 2020,
+     "n": 443363,
+     "narrative_n": 173866,
+     "relief_with": 6649,
+     "relief_without": 6280,
+     "narrative_share": 0.3921527055708302,
+     "relief_rate_all": 0.029161206505730067,
+     "relief_rate_narrative": 0.03824209448655862,
+     "relief_rate_no_narrative": 0.023302671272778547,
+     "relief_rate_diff": 0.01493942321378007
+    },
+    {
+     "year": 2019,
+     "n": 276201,
+     "narrative_n": 124273,
+     "relief_with": 5492,
+     "relief_without": 5898,
+     "narrative_share": 0.4499368213728408,
+     "relief_rate_all": 0.04123808385921847,
+     "relief_rate_narrative": 0.04419302664295543,
+     "relief_rate_no_narrative": 0.03882102048338687,
+     "relief_rate_diff": 0.005372006159568558
+    },
+    {
+     "year": 2018,
+     "n": 255948,
+     "narrative_n": 117766,
+     "relief_with": 5630,
+     "relief_without": 6284,
+     "narrative_share": 0.46011689874505757,
+     "relief_rate_all": 0.046548517667651244,
+     "relief_rate_narrative": 0.04780666745919875,
+     "relief_rate_no_narrative": 0.0454762559522948,
+     "relief_rate_diff": 0.002330411506903954
+    },
+    {
+     "year": 2017,
+     "n": 240309,
+     "narrative_n": 114086,
+     "relief_with": 5661,
+     "relief_without": 6088,
+     "narrative_share": 0.47474709644665825,
+     "relief_rate_all": 0.04889121922191845,
+     "relief_rate_narrative": 0.04962046175692022,
+     "relief_rate_no_narrative": 0.048232097161373125,
+     "relief_rate_diff": 0.0013883645955470938
+    },
+    {
+     "year": 2016,
+     "n": 186803,
+     "narrative_n": 75691,
+     "relief_with": 5667,
+     "relief_without": 6305,
+     "narrative_share": 0.4051915654459511,
+     "relief_rate_all": 0.0640889064950777,
+     "relief_rate_narrative": 0.07487019592818168,
+     "relief_rate_no_narrative": 0.056744546043631654,
+     "relief_rate_diff": 0.01812564988455003
+    },
+    {
+     "year": 2015,
+     "n": 163419,
+     "narrative_n": 52932,
+     "relief_with": 3951,
+     "relief_without": 6523,
+     "narrative_share": 0.3239035852624236,
+     "relief_rate_all": 0.0640929145325819,
+     "relief_rate_narrative": 0.07464293810927228,
+     "relief_rate_no_narrative": 0.05903861992813634,
+     "relief_rate_diff": 0.015604318181135939
+    }
+   ],
+   "product": [
+    {
+     "product": "Credit reporting or other personal consumer reports",
+     "n": 11627620,
+     "narrative_n": 1671265,
+     "relief_with": 1048,
+     "relief_without": 1538,
+     "narrative_share": 0.1437323373140849,
+     "relief_rate_all": 0.0002224014888687453,
+     "relief_rate_narrative": 0.0006270699141069789,
+     "relief_rate_no_narrative": 0.00015447420265749865,
+     "relief_rate_diff": 0.0004725957114494802
+    },
+    {
+     "product": "Credit reporting, credit repair services, or other personal consumer reports",
+     "n": 2162456,
+     "narrative_n": 806815,
+     "relief_with": 2029,
+     "relief_without": 1250,
+     "narrative_share": 0.37310123304242954,
+     "relief_rate_all": 0.0015163314305585871,
+     "relief_rate_narrative": 0.0025148268190353425,
+     "relief_rate_no_narrative": 0.0009220730267083984,
+     "relief_rate_diff": 0.0015927537923269442
+    },
+    {
+     "product": "Debt collection",
+     "n": 1109376,
+     "narrative_n": 438960,
+     "relief_with": 2490,
+     "relief_without": 2060,
+     "narrative_share": 0.3956818968501212,
+     "relief_rate_all": 0.0041014047536633205,
+     "relief_rate_narrative": 0.005672498633132859,
+     "relief_rate_no_narrative": 0.003072719028185485,
+     "relief_rate_diff": 0.0025997796049473743
+    },
+    {
+     "product": "Checking or savings account",
+     "n": 390039,
+     "narrative_n": 189206,
+     "relief_with": 28147,
+     "relief_without": 30252,
+     "narrative_share": 0.4850950802355662,
+     "relief_rate_all": 0.14972605303572206,
+     "relief_rate_narrative": 0.14876378127543524,
+     "relief_rate_no_narrative": 0.1506326151578675,
+     "relief_rate_diff": -0.0018688338824322526
+    },
+    {
+     "product": "Mortgage",
+     "n": 323630,
+     "narrative_n": 146103,
+     "relief_with": 4921,
+     "relief_without": 4715,
+     "narrative_share": 0.45145073077279607,
+     "relief_rate_all": 0.02977474276179588,
+     "relief_rate_narrative": 0.03368171769231296,
+     "relief_rate_no_narrative": 0.026559340269367477,
+     "relief_rate_diff": 0.00712237742294548
+    },
+    {
+     "product": "Credit card",
+     "n": 293319,
+     "narrative_n": 128904,
+     "relief_with": 22409,
+     "relief_without": 21076,
+     "narrative_share": 0.4394669284976425,
+     "relief_rate_all": 0.14825156229224837,
+     "relief_rate_narrative": 0.17384254949419722,
+     "relief_rate_no_narrative": 0.12818781741325305,
+     "relief_rate_diff": 0.04565473208094417
+    },
+    {
+     "product": "Credit card or prepaid card",
+     "n": 206232,
+     "narrative_n": 108624,
+     "relief_with": 19767,
+     "relief_without": 15952,
+     "narrative_share": 0.5267077854067264,
+     "relief_rate_all": 0.1731981457775709,
+     "relief_rate_narrative": 0.18197635881573132,
+     "relief_rate_no_narrative": 0.16342922711253177,
+     "relief_rate_diff": 0.01854713170319955
+    },
+    {
+     "product": "Money transfer, virtual currency, or money service",
+     "n": 188455,
+     "narrative_n": 121777,
+     "relief_with": 6718,
+     "relief_without": 4640,
+     "narrative_share": 0.6461860921705447,
+     "relief_rate_all": 0.06026902974184819,
+     "relief_rate_narrative": 0.05516641073437513,
+     "relief_rate_no_narrative": 0.06958817001109811,
+     "relief_rate_diff": -0.014421759276722984
+    },
+    {
+     "product": "Student loan",
+     "n": 113878,
+     "narrative_n": 59851,
+     "relief_with": 958,
+     "relief_without": 775,
+     "narrative_share": 0.5255712253464234,
+     "relief_rate_all": 0.015218040358980663,
+     "relief_rate_narrative": 0.016006415932900035,
+     "relief_rate_no_narrative": 0.014344679512095804,
+     "relief_rate_diff": 0.0016617364208042305
+    },
+    {
+     "product": "Vehicle loan or lease",
+     "n": 100912,
+     "narrative_n": 53380,
+     "relief_with": 1690,
+     "relief_without": 1288,
+     "narrative_share": 0.5289757412398922,
+     "relief_rate_all": 0.029510860948152848,
+     "relief_rate_narrative": 0.03165979767703259,
+     "relief_rate_no_narrative": 0.02709753429268703,
+     "relief_rate_diff": 0.004562263384345563
+    },
+    {
+     "product": "Credit reporting",
+     "n": 94656,
+     "narrative_n": 31482,
+     "relief_with": 244,
+     "relief_without": 176,
+     "narrative_share": 0.33259381338742394,
+     "relief_rate_all": 0.004437119675456389,
+     "relief_rate_narrative": 0.00775046058064926,
+     "relief_rate_no_narrative": 0.002785956247823472,
+     "relief_rate_diff": 0.004964504332825788
+    },
+    {
+     "product": "Bank account or service",
+     "n": 44997,
+     "narrative_n": 14521,
+     "relief_with": 3480,
+     "relief_without": 5760,
+     "narrative_share": 0.3227104029157499,
+     "relief_rate_all": 0.20534702313487566,
+     "relief_rate_narrative": 0.23965291646580814,
+     "relief_rate_no_narrative": 0.18900118125738286,
+     "relief_rate_diff": 0.05065173520842528
+    },
+    {
+     "product": "Payday loan, title loan, personal loan, or advance loan",
+     "n": 36087,
+     "narrative_n": 18625,
+     "relief_with": 658,
+     "relief_without": 559,
+     "narrative_share": 0.5161138360074266,
+     "relief_rate_all": 0.0337240557541497,
+     "relief_rate_narrative": 0.03532885906040269,
+     "relief_rate_no_narrative": 0.03201236971709999,
+     "relief_rate_diff": 0.0033164893433026976
+    },
+    {
+     "product": "Payday loan, title loan, or personal loan",
+     "n": 30277,
+     "narrative_n": 17041,
+     "relief_with": 855,
+     "relief_without": 692,
+     "narrative_share": 0.5628364765333421,
+     "relief_rate_all": 0.051094890510948905,
+     "relief_rate_narrative": 0.05017311190657825,
+     "relief_rate_no_narrative": 0.05228165608945301,
+     "relief_rate_diff": -0.002108544182874761
+    },
+    {
+     "product": "Prepaid card",
+     "n": 22443,
+     "narrative_n": 11765,
+     "relief_with": 2538,
+     "relief_without": 2446,
+     "narrative_share": 0.5242169050483447,
+     "relief_rate_all": 0.22207369781223543,
+     "relief_rate_narrative": 0.2157246068848279,
+     "relief_rate_no_narrative": 0.22906911406630456,
+     "relief_rate_diff": -0.013344507181476672
+    },
+    {
+     "product": "Consumer Loan",
+     "n": 20497,
+     "narrative_n": 9220,
+     "relief_with": 597,
+     "relief_without": 672,
+     "narrative_share": 0.4498219251597795,
+     "relief_rate_all": 0.06191149924379177,
+     "relief_rate_narrative": 0.06475054229934923,
+     "relief_rate_no_narrative": 0.0595903165735568,
+     "relief_rate_diff": 0.0051602257257924375
+    },
+    {
+     "product": "Debt or credit management",
+     "n": 9621,
+     "narrative_n": 5401,
+     "relief_with": 203,
+     "relief_without": 166,
+     "narrative_share": 0.5613761563247064,
+     "relief_rate_all": 0.03835360149672591,
+     "relief_rate_narrative": 0.037585632290316605,
+     "relief_rate_no_narrative": 0.03933649289099526,
+     "relief_rate_diff": -0.0017508606006786526
+    },
+    {
+     "product": "Money transfers",
+     "n": 3588,
+     "narrative_n": 1490,
+     "relief_with": 196,
+     "relief_without": 209,
+     "narrative_share": 0.415273132664437,
+     "relief_rate_all": 0.112876254180602,
+     "relief_rate_narrative": 0.13154362416107382,
+     "relief_rate_no_narrative": 0.0996186844613918,
+     "relief_rate_diff": 0.03192493969968202
+    },
+    {
+     "product": "Payday loan",
+     "n": 3354,
+     "narrative_n": 1619,
+     "relief_with": 84,
+     "relief_without": 96,
+     "narrative_share": 0.4827072152653548,
+     "relief_rate_all": 0.05366726296958855,
+     "relief_rate_narrative": 0.05188387893761581,
+     "relief_rate_no_narrative": 0.0553314121037464,
+     "relief_rate_diff": -0.003447533166130584
+    },
+    {
+     "product": "Other financial service",
+     "n": 886,
+     "narrative_n": 283,
+     "relief_with": 47,
+     "relief_without": 62,
+     "narrative_share": 0.3194130925507901,
+     "relief_rate_all": 0.12302483069977427,
+     "relief_rate_narrative": 0.16607773851590105,
+     "relief_rate_no_narrative": 0.10281923714759536,
+     "relief_rate_diff": 0.06325850136830569
+    },
+    {
+     "product": "Virtual currency",
+     "n": 16,
+     "narrative_n": 15,
+     "relief_with": 0,
+     "relief_without": 0,
+     "narrative_share": 0.9375,
+     "relief_rate_all": 0.0,
+     "relief_rate_narrative": 0.0,
+     "relief_rate_no_narrative": 0.0,
+     "relief_rate_diff": 0.0
+    }
+   ],
+   "submitted_via": [
+    {
+     "submitted_via": "Web",
+     "n": 16288041,
+     "narrative_n": 3836347,
+     "relief_with": 99079,
+     "relief_without": 55873,
+     "narrative_share": 0.23553151665077465,
+     "relief_rate_all": 0.009513237350028772,
+     "relief_rate_narrative": 0.025826391616816727,
+     "relief_rate_no_narrative": 0.004487180619761456,
+     "relief_rate_diff": 0.02133921099705527
+    },
+    {
+     "submitted_via": "Referral",
+     "n": 196008,
+     "narrative_n": 0,
+     "relief_with": 0,
+     "relief_without": 21956,
+     "narrative_share": 0.0,
+     "relief_rate_all": 0.11201583608832293,
+     "relief_rate_narrative": NaN,
+     "relief_rate_no_narrative": 0.11201583608832293,
+     "relief_rate_diff": NaN
+    },
+    {
+     "submitted_via": "Phone",
+     "n": 192436,
+     "narrative_n": 0,
+     "relief_with": 0,
+     "relief_without": 12989,
+     "narrative_share": 0.0,
+     "relief_rate_all": 0.06749776549086449,
+     "relief_rate_narrative": NaN,
+     "relief_rate_no_narrative": 0.06749776549086449,
+     "relief_rate_diff": NaN
+    },
+    {
+     "submitted_via": "Postal mail",
+     "n": 85621,
+     "narrative_n": 0,
+     "relief_with": 0,
+     "relief_without": 2981,
+     "narrative_share": 0.0,
+     "relief_rate_all": 0.03481622499153245,
+     "relief_rate_narrative": NaN,
+     "relief_rate_no_narrative": 0.03481622499153245,
+     "relief_rate_diff": NaN
+    },
+    {
+     "submitted_via": "Fax",
+     "n": 20142,
+     "narrative_n": 0,
+     "relief_with": 0,
+     "relief_without": 581,
+     "narrative_share": 0.0,
+     "relief_rate_all": 0.02884519908648595,
+     "relief_rate_narrative": NaN,
+     "relief_rate_no_narrative": 0.02884519908648595,
+     "relief_rate_diff": NaN
+    },
+    {
+     "submitted_via": "Email",
+     "n": 91,
+     "narrative_n": 0,
+     "relief_with": 0,
+     "relief_without": 4,
+     "narrative_share": 0.0,
+     "relief_rate_all": 0.04395604395604396,
+     "relief_rate_narrative": NaN,
+     "relief_rate_no_narrative": 0.04395604395604396,
+     "relief_rate_diff": NaN
+    }
+   ],
+   "size_tier": [
+    {
+     "size_tier": 5,
+     "n": 16712704,
+     "narrative_n": 3801103,
+     "relief_with": 97621,
+     "relief_without": 93246,
+     "narrative_share": 0.22743794181958826,
+     "relief_rate_all": 0.011420473910146438,
+     "relief_rate_narrative": 0.02568228222176563,
+     "relief_rate_no_narrative": 0.007221877441844741,
+     "relief_rate_diff": 0.01846040477992089
+    },
+    {
+     "size_tier": 4,
+     "n": 51735,
+     "narrative_n": 26255,
+     "relief_with": 919,
+     "relief_without": 691,
+     "narrative_share": 0.5074900937469798,
+     "relief_rate_all": 0.031120131439064464,
+     "relief_rate_narrative": 0.035002856598743096,
+     "relief_rate_no_narrative": 0.027119309262166404,
+     "relief_rate_diff": 0.007883547336576691
+    },
+    {
+     "size_tier": 3,
+     "n": 12663,
+     "narrative_n": 6347,
+     "relief_with": 337,
+     "relief_without": 281,
+     "narrative_share": 0.5012240385374713,
+     "relief_rate_all": 0.04880360104240701,
+     "relief_rate_narrative": 0.05309595084291791,
+     "relief_rate_no_narrative": 0.04449018366054465,
+     "relief_rate_diff": 0.008605767182373263
+    },
+    {
+     "size_tier": 2,
+     "n": 3768,
+     "narrative_n": 1911,
+     "relief_with": 144,
+     "relief_without": 107,
+     "narrative_share": 0.5071656050955414,
+     "relief_rate_all": 0.0666135881104034,
+     "relief_rate_narrative": 0.07535321821036106,
+     "relief_rate_no_narrative": 0.057619816908992996,
+     "relief_rate_diff": 0.017733401301368065
+    },
+    {
+     "size_tier": 1,
+     "n": 1469,
+     "narrative_n": 731,
+     "relief_with": 58,
+     "relief_without": 59,
+     "narrative_share": 0.49761742682096666,
+     "relief_rate_all": 0.07964601769911504,
+     "relief_rate_narrative": 0.07934336525307797,
+     "relief_rate_no_narrative": 0.07994579945799458,
+     "relief_rate_diff": -0.0006024342049166104
+    }
+   ]
+  },
+  "within_cell_relief_diff": {
+   "cells": 132,
+   "volume_weighted_mean_diff": 0.0022446552742253273,
+   "median_diff": 0.003442085234083706,
+   "share_cells_narrative_higher": 0.7575757575757576
+  }
+ },
+ "narrative_arm": {
+  "population": {
+   "narrative_bearing_primary_rows": 3836347,
+   "base_rate": 0.025826391616816727
+  },
+  "sample_design": {
+   "strata": "year x target, proportional allocation",
+   "train_cap": 40000,
+   "test_cap": 20000,
+   "seed": 42,
+   "encoder": "sentence-transformers/all-MiniLM-L6-v2"
+  },
+  "samples": {
+   "train_n": 40000,
+   "train_base_rate": 0.03675,
+   "test_n": 20000,
+   "test_base_rate": 0.01735,
+   "train_population_n": 1685668,
+   "test_population_n": 1337036,
+   "train_n_with_text": 40000,
+   "test_n_with_text": 20000
+  },
+  "text_truncation_chars": 2000,
+  "encoder_runtime": "onnxruntime via fastembed (see encode_phase note)",
+  "embedding_pca_explained_variance": 0.670863926410675,
+  "combined_minus_structured_auc": {
+   "point_estimate": 0.0040537621684351155,
+   "bootstrap_95ci": [
+    0.00044806968930306005,
+    0.007211785681678456
+   ],
+   "bootstrap_reps": 300
+  },
+  "models": {
+   "structured_only_logistic": {
+    "n": 20000,
+    "positives": 347,
+    "base_rate": 0.01735,
+    "brier": 0.013808835637779984,
+    "log_loss": 0.05019027767790525,
+    "roc_auc": 0.9653813549815524,
+    "pr_auc": 0.29921745470403327
+   },
+   "text_only_logistic": {
+    "n": 20000,
+    "positives": 347,
+    "base_rate": 0.01735,
+    "brier": 0.014711221882468189,
+    "log_loss": 0.053487026982588705,
+    "roc_auc": 0.9542265804503525,
+    "pr_auc": 0.26384672085206406
+   },
+   "combined_logistic": {
+    "n": 20000,
+    "positives": 347,
+    "base_rate": 0.01735,
+    "brier": 0.01334741572320126,
+    "log_loss": 0.047486268973698495,
+    "roc_auc": 0.9694351171499875,
+    "pr_auc": 0.3388710971163247
+   },
+   "structured_only_histgb": {
+    "n": 20000,
+    "positives": 347,
+    "base_rate": 0.01735,
+    "brier": 0.015735196533998963,
+    "log_loss": 0.062289463856419,
+    "roc_auc": 0.9581888415302325,
+    "pr_auc": 0.2250972198586505
+   }
+  }
+ },
+ "crosswalk": {
+  "cfpb_companies": 7639,
+  "cfpb_primary_complaints": 18367254,
+  "status": "blocked",
+  "reason": "SEC company_tickers.json could not be downloaded from this environment (SEC returned an access/rate page, HTTP 403, to the declared User-Agent). No third-party mirror was used. The matcher is implemented and unit-tested on fixtures; run scripts/download_data.py from a network where EDGAR fair access succeeds, then re-run this script."
+ }
+}

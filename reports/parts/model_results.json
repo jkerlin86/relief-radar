@@ -1,0 +1,310 @@
+{
+ "protocol": {
+  "train": "date_received < 2024-01-01",
+  "buffer_year": 2024,
+  "test": "date_received >= 2025-01-01",
+  "train_sample_n": 1000000,
+  "test_sample_n": 500000,
+  "seed": 42
+ },
+ "population": {
+  "primary_rows": 18367254,
+  "primary_positives": 225085,
+  "primary_base_rate": 0.012254689786508097,
+  "train_era_rows": 4473982,
+  "test_era_rows": 11160517,
+  "train_era_base_rate": 0.03277818283578253,
+  "test_era_base_rate": 0.004900400223394669
+ },
+ "era_base_rates_full_population": {
+  "2023": {
+   "n": 1291333,
+   "relief_rate": 0.015762781559830037
+  },
+  "2024": {
+   "n": 2732755,
+   "relief_rate": 0.008689033594303185
+  },
+  "2025": {
+   "n": 5433267,
+   "relief_rate": 0.004808524962973474
+  },
+  "2026": {
+   "n": 5727250,
+   "relief_rate": 0.004987559474442359
+  },
+  "2017": {
+   "n": 240309,
+   "relief_rate": 0.04889121922191845
+  },
+  "2022": {
+   "n": 799673,
+   "relief_rate": 0.02107361383965696
+  },
+  "2014": {
+   "n": 149069,
+   "relief_rate": 0.06268909028704828
+  },
+  "2019": {
+   "n": 276201,
+   "relief_rate": 0.04123808385921847
+  },
+  "2020": {
+   "n": 443363,
+   "relief_rate": 0.029161206505730067
+  },
+  "2016": {
+   "n": 186803,
+   "relief_rate": 0.0640889064950777
+  },
+  "2021": {
+   "n": 495081,
+   "relief_rate": 0.02862561883812952
+  },
+  "2012": {
+   "n": 65819,
+   "relief_rate": 0.09991036023032863
+  },
+  "2013": {
+   "n": 105110,
+   "relief_rate": 0.08485396251546
+  },
+  "2011": {
+   "n": 1854,
+   "relief_rate": 0.0010787486515641855
+  },
+  "2015": {
+   "n": 163419,
+   "relief_rate": 0.0640929145325819
+  },
+  "2018": {
+   "n": 255948,
+   "relief_rate": 0.046548517667651244
+  }
+ },
+ "category_caps": {
+  "sub_product": 60,
+  "issue": 60,
+  "sub_issue": 60
+ },
+ "samples": {
+  "train_n": 1000000,
+  "train_base_rate": 0.032837,
+  "test_n": 500000,
+  "test_base_rate": 0.005092
+ },
+ "models": {
+  "logistic_regression": {
+   "test": {
+    "n": 500000,
+    "positives": 2546,
+    "base_rate": 0.005092,
+    "brier": 0.004031696483039547,
+    "log_loss": 0.015220642047699665,
+    "roc_auc": 0.9850612231860122,
+    "pr_auc": 0.2965832432155792
+   },
+   "calibration_max_abs_gap": 0.011864556495892062
+  },
+  "hist_gradient_boosting": {
+   "test": {
+    "n": 500000,
+    "positives": 2546,
+    "base_rate": 0.005092,
+    "brier": 0.004093053231894191,
+    "log_loss": 0.014301021420451736,
+    "roc_auc": 0.989592983118113,
+    "pr_auc": 0.29355925521783144
+   },
+   "calibration_max_abs_gap": 0.014622222680338984,
+   "subgroups_product": [
+    {
+     "product": "Credit reporting or other personal consumer reports",
+     "n": 448755,
+     "positives": 79,
+     "base_rate": 0.00017604260676761261,
+     "brier": 0.00017886802808347025,
+     "log_loss": 0.0010936962518065215,
+     "roc_auc": 0.9793244844945201,
+     "pr_auc": 0.016473829614411677
+    },
+    {
+     "product": "Debt collection",
+     "n": 23879,
+     "positives": 37,
+     "base_rate": 0.001549478621382805,
+     "brier": 0.0016681790442995353,
+     "log_loss": 0.01022929199137546,
+     "roc_auc": 0.9185958460767621,
+     "pr_auc": 0.019894042601004108
+    },
+    {
+     "product": "Credit card",
+     "n": 7436,
+     "positives": 1085,
+     "base_rate": 0.14591178052716514,
+     "brier": 0.10803506654111233,
+     "log_loss": 0.339039853518459,
+     "roc_auc": 0.8004063368227509,
+     "pr_auc": 0.35781215931415133
+    },
+    {
+     "product": "Checking or savings account",
+     "n": 7098,
+     "positives": 928,
+     "base_rate": 0.1307410538179769,
+     "brier": 0.10634801412983416,
+     "log_loss": 0.3543042956941151,
+     "roc_auc": 0.7121114052981614,
+     "pr_auc": 0.2813150190286597
+    },
+    {
+     "product": "Money transfer, virtual currency, or money service",
+     "n": 5241,
+     "positives": 215,
+     "base_rate": 0.041022705590536154,
+     "brier": 0.03463789971523086,
+     "log_loss": 0.12023010507232287,
+     "roc_auc": 0.9033324387603068,
+     "pr_auc": 0.19087393034510527
+    },
+    {
+     "product": "Mortgage",
+     "n": 2329,
+     "positives": 46,
+     "base_rate": 0.0197509660798626,
+     "brier": 0.019301506962995273,
+     "log_loss": 0.08757706373986825,
+     "roc_auc": 0.7874840503532727,
+     "pr_auc": 0.050436065799765874
+    },
+    {
+     "product": "Vehicle loan or lease",
+     "n": 1807,
+     "positives": 47,
+     "base_rate": 0.026009961261759824,
+     "brier": 0.02463511676205546,
+     "log_loss": 0.11446007407329674,
+     "roc_auc": 0.7545212765957446,
+     "pr_auc": 0.09800016400087981
+    },
+    {
+     "product": "Student loan",
+     "n": 1364,
+     "positives": 6,
+     "base_rate": 0.004398826979472141,
+     "brier": 0.004355964805289162,
+     "log_loss": 0.023956425903833033,
+     "roc_auc": 0.8686794305351007,
+     "pr_auc": 0.035587909915888144
+    },
+    {
+     "product": "Payday loan, title loan, personal loan, or advance loan",
+     "n": 1255,
+     "positives": 28,
+     "base_rate": 0.022310756972111555,
+     "brier": 0.019546693450390566,
+     "log_loss": 0.0821097055344971,
+     "roc_auc": 0.8765572243567354,
+     "pr_auc": 0.23173206263212476
+    },
+    {
+     "product": "Prepaid card",
+     "n": 503,
+     "positives": 67,
+     "base_rate": 0.13320079522862824,
+     "brier": 0.11883408257679037,
+     "log_loss": 0.3497140358583389,
+     "roc_auc": 0.8420854443379433,
+     "pr_auc": 0.3628934096102168
+    },
+    {
+     "product": "Debt or credit management",
+     "n": 333,
+     "positives": 8,
+     "base_rate": 0.024024024024024024,
+     "brier": 0.020915944709429063,
+     "log_loss": 0.08089736421704656,
+     "roc_auc": 0.9461538461538462,
+     "pr_auc": 0.21233858028827543
+    }
+   ],
+   "subgroups_year": [
+    {
+     "year": 2026,
+     "n": 256210,
+     "positives": 1307,
+     "base_rate": 0.005101284102884352,
+     "brier": 0.004108116085659018,
+     "log_loss": 0.014076395003684575,
+     "roc_auc": 0.9905633575825823,
+     "pr_auc": 0.28583969867544895
+    },
+    {
+     "year": 2025,
+     "n": 243790,
+     "positives": 1239,
+     "base_rate": 0.005082242913983346,
+     "brier": 0.004077222993725742,
+     "log_loss": 0.014537091539160111,
+     "roc_auc": 0.988553523514649,
+     "pr_auc": 0.30484869722892066
+    }
+   ],
+   "subgroups_submitted_via": [
+    {
+     "submitted_via": "Web",
+     "n": 497212,
+     "positives": 2307,
+     "base_rate": 0.004639871925858587,
+     "brier": 0.003754900385637055,
+     "log_loss": 0.01321224326616344,
+     "roc_auc": 0.990053914670072,
+     "pr_auc": 0.28880450561043
+    },
+    {
+     "submitted_via": "Phone",
+     "n": 1298,
+     "positives": 102,
+     "base_rate": 0.07858243451463791,
+     "brier": 0.05899225352999697,
+     "log_loss": 0.19037726306354896,
+     "roc_auc": 0.8902550986949964,
+     "pr_auc": 0.3523371018108474
+    },
+    {
+     "submitted_via": "Referral",
+     "n": 984,
+     "positives": 114,
+     "base_rate": 0.11585365853658537,
+     "brier": 0.08935500073873173,
+     "log_loss": 0.2905520636902542,
+     "roc_auc": 0.8075670498084291,
+     "pr_auc": 0.3273541273092617
+    },
+    {
+     "submitted_via": "Postal mail",
+     "n": 506,
+     "positives": 23,
+     "base_rate": 0.045454545454545456,
+     "brier": 0.029738773902916966,
+     "log_loss": 0.09528042142789649,
+     "roc_auc": 0.963543073183905,
+     "pr_auc": 0.5350850797394885
+    }
+   ]
+  },
+  "logistic_regression_balanced_sensitivity": {
+   "test": {
+    "n": 500000,
+    "positives": 2546,
+    "base_rate": 0.005092,
+    "brier": 0.01872247829754197,
+    "log_loss": 0.0667309728534662,
+    "roc_auc": 0.9887279001896827,
+    "pr_auc": 0.2990934850078323
+   },
+   "calibration_max_abs_gap": 0.5080402313382912
+  }
+ }
+}

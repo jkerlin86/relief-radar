@@ -1,0 +1,72 @@
+{
+ "population": {
+  "narrative_bearing_primary_rows": 3836347,
+  "base_rate": 0.025826391616816727
+ },
+ "sample_design": {
+  "strata": "year x target, proportional allocation",
+  "train_cap": 40000,
+  "test_cap": 20000,
+  "seed": 42,
+  "encoder": "sentence-transformers/all-MiniLM-L6-v2"
+ },
+ "samples": {
+  "train_n": 40000,
+  "train_base_rate": 0.03675,
+  "test_n": 20000,
+  "test_base_rate": 0.01735,
+  "train_population_n": 1685668,
+  "test_population_n": 1337036,
+  "train_n_with_text": 40000,
+  "test_n_with_text": 20000
+ },
+ "text_truncation_chars": 2000,
+ "encoder_runtime": "onnxruntime via fastembed (see encode_phase note)",
+ "embedding_pca_explained_variance": 0.670863926410675,
+ "combined_minus_structured_auc": {
+  "point_estimate": 0.0040537621684351155,
+  "bootstrap_95ci": [
+   0.00044806968930306005,
+   0.007211785681678456
+  ],
+  "bootstrap_reps": 300
+ },
+ "models": {
+  "structured_only_logistic": {
+   "n": 20000,
+   "positives": 347,
+   "base_rate": 0.01735,
+   "brier": 0.013808835637779984,
+   "log_loss": 0.05019027767790525,
+   "roc_auc": 0.9653813549815524,
+   "pr_auc": 0.29921745470403327
+  },
+  "text_only_logistic": {
+   "n": 20000,
+   "positives": 347,
+   "base_rate": 0.01735,
+   "brier": 0.014711221882468189,
+   "log_loss": 0.053487026982588705,
+   "roc_auc": 0.9542265804503525,
+   "pr_auc": 0.26384672085206406
+  },
+  "combined_logistic": {
+   "n": 20000,
+   "positives": 347,
+   "base_rate": 0.01735,
+   "brier": 0.01334741572320126,
+   "log_loss": 0.047486268973698495,
+   "roc_auc": 0.9694351171499875,
+   "pr_auc": 0.3388710971163247
+  },
+  "structured_only_histgb": {
+   "n": 20000,
+   "positives": 347,
+   "base_rate": 0.01735,
+   "brier": 0.015735196533998963,
+   "log_loss": 0.062289463856419,
+   "roc_auc": 0.9581888415302325,
+   "pr_auc": 0.2250972198586505
+  }
+ }
+}
