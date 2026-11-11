@@ -19,6 +19,21 @@ def _tickers():
     return prepare_tickers(raw)
 
 
+def test_prepare_tickers_sec_title_schema():
+    # The SEC publishes company_tickers.json with a "title" field.
+    raw = pd.DataFrame(
+        {
+            "cik_str": [320193],
+            "title": ["Apple Inc."],
+            "ticker": ["AAPL"],
+        }
+    )
+    out = prepare_tickers(raw)
+    assert out.iloc[0]["cik"] == 320193
+    assert out.iloc[0]["sec_name"] == "Apple Inc."
+    assert out.iloc[0]["ticker"] == "AAPL"
+
+
 def test_exact_tier():
     out = match_companies(["ACME BANK"], _tickers())
     row = out.iloc[0]

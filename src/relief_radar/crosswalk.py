@@ -27,11 +27,16 @@ AMBIGUITY_MARGIN = 0.02
 
 
 def prepare_tickers(raw: pd.DataFrame) -> pd.DataFrame:
-    """Normalize the SEC company_tickers frame (cik_str/name/ticker)."""
+    """Normalize the SEC company_tickers frame (cik_str/title/ticker).
+
+    The file as published by the SEC names the company field "title";
+    "name" is accepted as a fallback for older fixtures.
+    """
+    name_col = "title" if "title" in raw.columns else "name"
     out = pd.DataFrame(
         {
             "cik": raw["cik_str"].astype(int),
-            "sec_name": raw["name"].astype(str),
+            "sec_name": raw[name_col].astype(str),
             "ticker": raw["ticker"].astype(str),
         }
     )

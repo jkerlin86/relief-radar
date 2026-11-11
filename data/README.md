@@ -49,9 +49,11 @@ with `scripts/download_data.py`, then build the processed layer with
   company facts from data.sec.gov, fetched under the SEC's fair-access
   rules with the declared User-Agent in configs/default.json and a
   maximum of 5 requests per second.
-- Note: during this build, EDGAR returned access/rate pages (HTTP 403)
-  to this environment; see reports/parts/crosswalk_status.json for the
-  recorded status. No third-party mirror was substituted.
+- Note: during the original build, EDGAR returned access/rate pages
+  (HTTP 403) to this environment. The crosswalk was completed on
+  2026-11-11 using the declared User-Agent in configs/default.json;
+  see reports/parts/crosswalk_status.json for the measured status.
+  No third-party mirror was substituted at any point.
 
 ## Processed layer
 

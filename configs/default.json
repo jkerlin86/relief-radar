@@ -1,7 +1,7 @@
 {
   "edgar": {
     "max_requests_per_second": 5,
-    "user_agent": "KerlinPortfolio/1.0 (https://github.com/jkerlin86)"
+    "user_agent": "Joseph Kerlin jkerlin86@gmail.com"
   },
   "models": {
     "company_prior_strength": 20.0,

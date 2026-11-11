@@ -1,6 +1,128 @@
 {
  "cfpb_companies": 7639,
  "cfpb_primary_complaints": 18367254,
- "status": "blocked",
- "reason": "SEC company_tickers.json could not be downloaded from this environment (SEC returned an access/rate page, HTTP 403, to the declared User-Agent). No third-party mirror was used. The matcher is implemented and unit-tested on fixtures; run scripts/download_data.py from a network where EDGAR fair access succeeds, then re-run this script."
+ "status": "matched",
+ "companies_matched": 348,
+ "company_match_rate": 0.04555570100798534,
+ "complaint_volume_matched": 11917653,
+ "complaint_volume_share_matched": 0.6488532798642628,
+ "by_tier": {
+  "containment": {
+   "size": 215,
+   "sum": 5876650
+  },
+  "exact": {
+   "size": 128,
+   "sum": 6039727
+  },
+  "fuzzy": {
+   "size": 5,
+   "sum": 1276
+  }
+ },
+ "ambiguous_matches": 102,
+ "top_unmatched": [
+  {
+   "company_norm": "EXPERIAN INFORMATION SOLUTIONS",
+   "complaints": 4308344
+  },
+  {
+   "company_norm": "RESURGENT CAPITAL SERVICES",
+   "complaints": 74643
+  },
+  {
+   "company_norm": "LEXISNEXIS",
+   "complaints": 73614
+  },
+  {
+   "company_norm": "PORTFOLIO RECOVERY ASSOCIATES",
+   "complaints": 67705
+  },
+  {
+   "company_norm": "CBC COMPANIES",
+   "complaints": 60188
+  },
+  {
+   "company_norm": "CL HOLDINGS",
+   "complaints": 58319
+  },
+  {
+   "company_norm": "NAVY FEDERAL CREDIT UNION",
+   "complaints": 49601
+  },
+  {
+   "company_norm": "DISCOVER BANK",
+   "complaints": 44389
+  },
+  {
+   "company_norm": "NAVIENT SOLUTIONS",
+   "complaints": 43735
+  },
+  {
+   "company_norm": "TD BANK US HOLDING",
+   "complaints": 38106
+  },
+  {
+   "company_norm": "EARLY WARNING SERVICES",
+   "complaints": 37648
+  },
+  {
+   "company_norm": "OCWEN FINANCIAL",
+   "complaints": 36765
+  },
+  {
+   "company_norm": "PNC BANK",
+   "complaints": 31752
+  },
+  {
+   "company_norm": "CCS FINANCIAL SERVICES",
+   "complaints": 29614
+  },
+  {
+   "company_norm": "IC SYSTEM",
+   "complaints": 26044
+  },
+  {
+   "company_norm": "MOHELA",
+   "complaints": 22625
+  },
+  {
+   "company_norm": "TRANSWORLD SYSTEMS",
+   "complaints": 22256
+  },
+  {
+   "company_norm": "NATIONAL CREDIT SYSTEMS",
+   "complaints": 22132
+  },
+  {
+   "company_norm": "GOLDMAN SACHS BANK USA",
+   "complaints": 22023
+  },
+  {
+   "company_norm": "UNITED SERVICES AUTOMOBILE ASSOCIATION",
+   "complaints": 20136
+  },
+  {
+   "company_norm": "SHELLPOINT PARTNERS",
+   "complaints": 19613
+  },
+  {
+   "company_norm": "KRIYA CAPITAL",
+   "complaints": 19019
+  },
+  {
+   "company_norm": "NATIONSTAR MORTGAGE",
+   "complaints": 18919
+  },
+  {
+   "company_norm": "SELECT PORTFOLIO SERVICING",
+   "complaints": 16604
+  },
+  {
+   "company_norm": "FIFTH THIRD FINANCIAL",
+   "complaints": 15875
+  }
+ ],
+ "alignment": "completed",
+ "alignment_rows": 407
 }

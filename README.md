@@ -61,13 +61,21 @@ combined model 0.969 (PR AUC 0.339 versus 0.299 structured-only). The
 combined-minus-structured AUC difference is +0.004 (bootstrap 95% CI
 +0.000 to +0.007): small, positive, and reported with its interval.
 
-**The EDGAR alignment is blocked, and says so.** CFPB company names
-were normalized into a 7,639-company table, and the name-to-CIK
-matcher (exact / containment / fuzzy tiers with ambiguity flags) and
-the EDGAR facts extractor are implemented and unit-tested. But SEC
-EDGAR returned HTTP 403 to this build environment, no third-party
-mirror was substituted, and `reports/alignment_report.md` therefore
-reports no alignment statistics, because none were measured.
+**The EDGAR alignment is measured, and says what it found.** CFPB
+company names were normalized into a 7,639-company table and matched
+against the SEC tickers file with the name-to-CIK matcher (exact /
+containment / fuzzy tiers with ambiguity flags): 348 companies
+matched (4.56% by count), covering 64.89% of primary-population
+complaint volume, with 102 matches flagged ambiguous. The alignment
+panel aligns annual complaint volume and relief rates with filed
+financial facts (revenues, net income, assets) for the 15 largest
+confidently matched filers across 407 company-year-concept rows; it
+is descriptive context only, and `reports/alignment_report.md` gives
+the full audit. At publication this step was blocked (SEC EDGAR
+returned HTTP 403 to the original build environment and no
+third-party mirror was substituted); it was completed on 2026-11-11
+once the SEC fair-access route was established, and the report
+records that history.
 
 ## What is in the repository
 
@@ -89,7 +97,7 @@ reports no alignment statistics, because none were measured.
   machine required.
 - `notebooks/` — executed walkthroughs that read only build
   artefacts, so they cannot drift from the pipeline outputs.
-- `tests/` — 27 tests on synthetic fixtures with hand-computable
+- `tests/` — 28 tests on synthetic fixtures with hand-computable
   expectations; the suite never touches the downloads.
 
 ## Quick start
